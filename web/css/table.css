@@ -1,0 +1,93 @@
+table#acrylic {
+    
+        line-height: 0.1;
+            border-collapse: separate;
+            background: #fff;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        
+            -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+           width:100%;
+        
+        }
+        
+        #acrylic thead {
+            
+        }
+        
+        #acrylic thead th {
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+            text-align: left;
+            padding: 20px;
+            background-size: 100%;
+            background-color: #707172;
+            border-top: 1px solid #858d99;
+        }
+        
+     
+        
+        #acrylic tbody tr td {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: #5f6062;
+            font-size: 13px;
+            padding: 20px 20px 20px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        #acrylic tbody tr:nth-child(2n) {
+            background: #f0f3f5;
+        }
+        
+        #acrylic tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+       
+        
+        #acrylic tbody:hover > tr td {
+            filter: progid DXImageTransform.Microsoft.Alpha(Opacity=50);
+            opacity: 0.5;
+        }
+        
+        #acrylic tbody:hover > tr:hover td {
+            text-shadow: none;
+            color: #2d2d2d;
+            filter: progid DXImageTransform.Microsoft.Alpha(enabled=false);
+            opacity: 1;
+            transition: 0.2s all;
+        }
+        
+        @media screen and (max-width: 767px) {
+            #acrylic thead {
+                display: none;
+            }
+            #acrylic tr {
+                margin-bottom: 10px;
+                display: block;
+            }
+            #acrylic td {
+                display: block;
+                text-align: right;
+                font-size: 13px;
+                border-bottom: 1px dotted #ccc;
+            }
+            #acrylic td:last-child {
+                border-bottom: 0;
+            }
+            #acrylic td:before {
+                content: attr(data-label);
+                float: left;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            table#acrylic {
+                width: 100%;
+            }
+        }
